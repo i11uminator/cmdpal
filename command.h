@@ -4,6 +4,8 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
+#include <iterator>
+#include <fstream>
 #include <exception>
 #include <string>
 #include <sstream>
@@ -12,7 +14,7 @@
 
 class Command
 {
-    public:
+	public:
 	Command();
 	Command(int id);
 	Command(int id, std::string name);
@@ -30,7 +32,8 @@ class Command
 	std::string ToLower(std::string s);
 	std::string PrintToStorage();
 	std::string Print();
-    private:
+	std::string& trim(std::string& s);
+	private:
 	int id;
 	std::string name;
 	std::string description;

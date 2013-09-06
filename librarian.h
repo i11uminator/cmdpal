@@ -5,7 +5,7 @@
 
 class Librarian
 {
-    public:
+	public:
 	Librarian();
 	Librarian(std::string filepath);
 	bool AddCommand(Command command);
@@ -16,15 +16,16 @@ class Librarian
 	void LoadCommands();
 	void ImportStrings(std::vector<std::string>& vs);
 	std::vector<std::string>& SplitToVector(std::string s, const char c, std::vector<std::string>& vs);
-	bool Contains(std::string name);
+	int Contains(std::string name);
 	void AddDetails(Command command);
 	void WriteCommandToFile(Command command);
-	void PrintAll();
-    private:
-	std::vector<Command> commands;
-	static int topid; 
-	std::string filepath;
 	int GetHighestId();
+	void PrintAll();
+	static int topid;
+	private:
+	std::vector<Command> commands;
+	std::string filepath;
+	std::string& trim(std::string& s);
 };
 
 #endif//LIBRARIAN
