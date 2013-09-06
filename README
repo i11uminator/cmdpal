@@ -1,0 +1,8 @@
+cmdpal is a simple program to help store, track, and present common, important, etc shell commands.
+
+1. Ability to store commands and associated, tags, descriptions, etc.
+2. Ability to retrieve commands in several ways, regex, name, tag, etc.
+
+--eventually
+
+3. run aas in order to monitor all commands used, count them and help to find patterns and ways to optimize
