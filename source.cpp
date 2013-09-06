@@ -10,26 +10,9 @@
 
 #include "librarian.h"
 
-const std::string repo("/home/brad/Documents/Commands/commands");
-
-void import(std::vector<std::string>& vs)
-{
-	std::ifstream ifl(repo);
-	
-	if (ifl.is_open())
-	{
-	std::copy
-		(
-		std::istream_iterator<std::string>(ifl),
-		std::istream_iterator<std::string>(),
-		std::back_inserter(vs)
-		);
-	}
-}
-
 int main(int argc, char** argv)
 {
-	Librarian libr("C:\\commands");
+	Librarian libr("/home/brad/Documents/Commands/commands");
 	std::vector<std::string> vs;
 	for (int i = 1; i < argc; ++i)
 	{
