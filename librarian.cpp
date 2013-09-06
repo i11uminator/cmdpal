@@ -12,6 +12,7 @@ Librarian::Librarian(std::string filepath)
 	this->LoadCommands();
 	Librarian::topid = this->GetHighestId();
 }
+
 int Librarian::topid = 0;
 
 Command& Librarian::GetCommand(int id)

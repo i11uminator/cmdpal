@@ -5,7 +5,7 @@
 
 class Librarian
 {
-	public:
+    public:
 	Librarian();
 	Librarian(std::string filepath);
 	bool AddCommand(Command command);
@@ -22,7 +22,7 @@ class Librarian
 	int GetHighestId();
 	void PrintAll();
 	static int topid;
-	private:
+    private:
 	std::vector<Command> commands;
 	std::string filepath;
 	std::string& trim(std::string& s);
