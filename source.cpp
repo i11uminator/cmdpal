@@ -26,6 +26,5 @@ int main(int argc, char** argv)
 	}
 	libr.PrintAll();
 
-	system("PAUSE");
 	return 0;
 }
